@@ -1,9 +1,9 @@
-var mongoose = require("mongoose");
-mongoose.set("debug", true);
+var mongoose = require('mongoose');
+mongoose.set('debug', true);
 
-mongoose.connect("mongodb://localhost/todo-api");
+mongoose.connect('mongodb://localhost/todo-api');
 
 // allow to use Promise syntax
 mongoose.Promise = Promise;
 
-module.exports.Todo = require("./todo");
+module.exports.Todo = require('./todo');
